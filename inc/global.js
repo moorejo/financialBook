@@ -1,5 +1,6 @@
 // JavaScript Document
-$('#rules').bind('click', function(){
-		console.log('Click event fired on studetnsbtn');
-		$.mobile.changePage('#rules',[allowSamePageTransition = false]);		
-	});
+
+//drop down menubar
+$(document).bind('mobileinit',function(){
+   $.mobile.selectmenu.prototype.options.nativeMenu = false;
+});
